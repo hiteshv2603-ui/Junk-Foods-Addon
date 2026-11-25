@@ -1,5 +1,7 @@
 package name.modid;
 
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -52,7 +54,7 @@ Item.Properties().food(BURGER_FOOD));
     public static final Item FRIES = register("fries", new
 Item.Properties().food(FRIES_FOOD));
     public static final Item CUPCAKE = register("cupcake", new
-Item.Properties().food(CUPCAKE_FOOD_FOOD));
+Item.Properties().food(CUPCAKE_FOOD));
 
 //Below is the code brain freeze effect for the ice cream btw
     public static final Item ICE_CREAM = register("ice_cream", new
@@ -75,7 +77,15 @@ Item.Properties()
         return Registry.register(BuiltInRegistries.ITEM, key, new Item(properties.setId(key)));
     }
 
-    // Calling this loads the class, which registers all the items above
+    
     public static void init() {
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
+            output.accept(SODA);
+            output.accept(CHIPS);
+            output.accept(BURGER);
+            output.accept(FRIES);
+            output.accept(ICE_CREAM);
+            output.accept(CUPCAKE);
+        });
     }
-}                
+}       
