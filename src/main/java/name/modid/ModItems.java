@@ -10,6 +10,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Consumables;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 
@@ -134,24 +135,33 @@ Item.Properties().food(CUPCAKE_FOOD));
 Item.Properties().food(BANANA_FOOD));
     public static final Item BLUEBERRY = register("blueberry", new
 Item.Properties().food(BLUEBERRY_FOOD));
-    public static final Item COFFEE = register("coffee", new
-Item.Properties().food(COFFEE_FOOD));
+    public static final Item COFFEE = register("coffee", new Item.Properties()
+            .food(COFFEE_FOOD, Consumables.defaultDrink()
+                    .onConsume(new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(MobEffects.HASTE, 600, 0)))
+                    .build()));
     public static final Item CROISSANT = register("croissant", new
 Item.Properties().food(CROISSANT_FOOD));
     public static final Item GRAPE = register("grape", new
 Item.Properties().food(GRAPE_FOOD));
     public static final Item KIWI = register("kiwi", new
 Item.Properties().food(KIWI_FOOD));
-    public static final Item LEMON = register("lemon", new
-Item.Properties().food(LEMON_FOOD));
+    public static final Item LEMON = register("lemon", new Item.Properties()
+            .food(LEMON_FOOD, Consumables.defaultFood()
+                    .onConsume(new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(MobEffects.NAUSEA, 60, 0)))
+                    .build()));
     public static final Item ONIGIRI = register("onigiri", new
 Item.Properties().food(ONIGIRI_FOOD));
     public static final Item ORANGE = register("orange", new
 Item.Properties().food(ORANGE_FOOD));
     public static final Item PEACH = register("peach", new
 Item.Properties().food(PEACH_FOOD));
-    public static final Item POPSICLE = register("popsicle", new
-Item.Properties().food(POPSICLE_FOOD));
+    public static final Item POPSICLE = register("popsicle", new Item.Properties()
+            .food(POPSICLE_FOOD, Consumables.defaultFood()
+                    .onConsume(new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(MobEffects.SLOWNESS, 60, 0)))
+                    .build()));
     public static final Item PRETZEL = register("pretzel", new
 Item.Properties().food(PRETZEL_FOOD));
     public static final Item STRAWBERRY = register("strawberry", new
