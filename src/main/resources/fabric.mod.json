@@ -2,14 +2,14 @@
 	"schemaVersion": 1,
 	"id": "junkfoodsaddon",
 	"version": "${version}",
-	"name": "JunkFoodsAddon",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Junk Foods Addon",
+	"description": "Adds 41 snacks, drinks and treats with crafting recipes, fun effects and its own Creative tab!",
 	"authors": [
-		"Me!"
+		"Hitesh"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/hiteshv2603-ui/Junk-Foods-Addon",
+		"sources": "https://github.com/hiteshv2603-ui/Junk-Foods-Addon"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/junkfoodsaddon/icon.png",
