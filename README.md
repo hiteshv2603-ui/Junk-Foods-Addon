@@ -2,7 +2,7 @@
 
 A Fabric mod for Minecraft 26.3 that adds 41 snacks, drinks and treats that include burgers, fries, boba, cakes, popsicles and soy milks, and much more!
 
-(Screenshot1.png)
+![](Screenshot1.png)
 
 ## Features
 - **41 new foods**, some textures I drew myself like the burger, chips, and fries but the others I got from an icon pack (link to that is below)
@@ -34,7 +34,7 @@ A Fabric mod for Minecraft 26.3 that adds 41 snacks, drinks and treats that incl
 - Soy Milk - Glass Bottle + 2 Wheat Seeds
 - Blue Popsicle - Popsicle + Blue Dye
 
-(Screenshot2.png)
+![](Screenshot2.png)
 
 ## How to Install
 1. Install Fabric Loader for Minecraft
