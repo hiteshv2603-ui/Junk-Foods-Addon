@@ -22,6 +22,106 @@ CHIPS_FOOD = new FoodProperties.Builder()
 .nutrition(3).saturationModifier(0.2f).build();
 
     public static final FoodProperties
+CHEESECAKE_FOOD = new FoodProperties.Builder()
+
+.nutrition(10).saturationModifier(0.8f).build();
+
+    public static final FoodProperties
+CHOCOLATECAKE_FOOD = new FoodProperties.Builder()
+
+.nutrition(10).saturationModifier(0.8f).build();
+
+    public static final FoodProperties
+MATCHACAKE_FOOD = new FoodProperties.Builder()
+
+.nutrition(10).saturationModifier(0.8f).build();
+
+    public static final FoodProperties
+REDVELVETCAKE_FOOD = new FoodProperties.Builder()
+
+.nutrition(10).saturationModifier(0.8f).build();
+
+    public static final FoodProperties
+STRAWBERRYCAKE_FOOD = new FoodProperties.Builder()
+
+.nutrition(10).saturationModifier(0.8f).build();
+
+    public static final FoodProperties
+SOUP_FOOD = new FoodProperties.Builder()
+
+.nutrition(10).saturationModifier(0.8f).build();
+
+    public static final FoodProperties
+BLUEPOPSICLE_FOOD = new FoodProperties.Builder()
+
+.nutrition(3).saturationModifier(0.4f).build();
+
+    public static final FoodProperties
+GREENPOPSICLE_FOOD = new FoodProperties.Builder()
+
+.nutrition(3).saturationModifier(0.4f).build();
+
+    public static final FoodProperties
+PINKPOPSICLE_FOOD = new FoodProperties.Builder()
+
+.nutrition(3).saturationModifier(0.4f).build();
+
+    public static final FoodProperties
+YELLOWPOPSICLE_FOOD = new FoodProperties.Builder()
+
+.nutrition(3).saturationModifier(0.4f).build();
+
+    public static final FoodProperties
+SOYMILKALMOND_FOOD = new FoodProperties.Builder()
+
+.nutrition(4).saturationModifier(0.5f).build();
+
+    public static final FoodProperties
+SOYMILKBANANA_FOOD = new FoodProperties.Builder()
+
+.nutrition(4).saturationModifier(0.5f).build();
+
+    public static final FoodProperties
+SOYMILKCHOCOLATE_FOOD = new FoodProperties.Builder()
+
+.nutrition(4).saturationModifier(0.5f).build();
+
+    public static final FoodProperties
+SOYMILKCHOCOMINT_FOOD = new FoodProperties.Builder()
+
+.nutrition(4).saturationModifier(0.5f).build();
+
+    public static final FoodProperties
+SOYMILKCOFFEE_FOOD = new FoodProperties.Builder()
+
+.nutrition(4).saturationModifier(0.5f).build();
+
+    public static final FoodProperties
+SOYMILKMANGO_FOOD = new FoodProperties.Builder()
+
+.nutrition(4).saturationModifier(0.5f).build();
+
+    public static final FoodProperties
+MATCHA_FOOD = new FoodProperties.Builder()
+
+.nutrition(4).saturationModifier(0.5f).build();
+
+    public static final FoodProperties
+SOYMILKPEACH_FOOD = new FoodProperties.Builder()
+
+.nutrition(4).saturationModifier(0.5f).build();
+
+    public static final FoodProperties
+SOYMILK_FOOD = new FoodProperties.Builder()
+
+.nutrition(4).saturationModifier(0.5f).build();
+
+    public static final FoodProperties
+SOYMILKSTRAWBERRY_FOOD = new FoodProperties.Builder()
+
+.nutrition(4).saturationModifier(0.5f).build();
+
+    public static final FoodProperties
 BANANA_FOOD = new FoodProperties.Builder()
 
 .nutrition(3).saturationModifier(0.2f).build();
@@ -168,10 +268,61 @@ Item.Properties().food(PRETZEL_FOOD));
 Item.Properties().food(STRAWBERRY_FOOD));
     public static final Item BOBA = register("boba", new
 Item.Properties().food(BOBA_FOOD));
+    public static final Item CHEESECAKE = register("cheesecake", new
+Item.Properties().food(CHEESECAKE_FOOD));
+    public static final Item CHOCOLATECAKE = register("chocolate_cake", new
+Item.Properties().food(CHOCOLATECAKE_FOOD));
+    public static final Item MATCHACAKE = register("matcha_cake", new
+Item.Properties().food(MATCHACAKE_FOOD));
+    public static final Item REDVELVETCAKE = register("red_velvet_cake", new
+Item.Properties().food(REDVELVETCAKE_FOOD));
+    public static final Item STRAWBERRYCAKE = register("strawberry_cake", new
+Item.Properties().food(STRAWBERRYCAKE_FOOD));
+    public static final Item SOUP = register("soup", new
+Item.Properties().food(SOUP_FOOD));
+     public static final Item BLUEPOPSICLE = register("blue_popsicle", new Item.Properties()
+            .food(BLUEPOPSICLE_FOOD, Consumables.defaultFood()
+                    .onConsume(new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(MobEffects.SLOWNESS, 60, 0)))
+                    .build()));
+    public static final Item GREENPOPSICLE = register("green_popsicle", new Item.Properties()
+            .food(GREENPOPSICLE_FOOD, Consumables.defaultFood()
+                    .onConsume(new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(MobEffects.SLOWNESS, 60, 0)))
+                    .build()));
+    public static final Item PINKPOPSICLE = register("pink_popsicle", new Item.Properties()
+            .food(PINKPOPSICLE_FOOD, Consumables.defaultFood()
+                    .onConsume(new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(MobEffects.SLOWNESS, 60, 0)))
+                    .build()));
+    public static final Item YELLOWPOPSICLE = register("yellow_popsicle", new Item.Properties()
+            .food(YELLOWPOPSICLE_FOOD, Consumables.defaultFood()
+                    .onConsume(new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(MobEffects.SLOWNESS, 60, 0)))
+                    .build()));
+    public static final Item SOYMILKALMOND = register("almond_soy_milk", new
+Item.Properties().food(SOYMILKALMOND_FOOD));
+    public static final Item SOYMILKBANANA = register("banana_soy_milk", new
+Item.Properties().food(SOYMILKBANANA_FOOD));
+    public static final Item SOYMILKCHOCOLATE = register("chocolate_soy_milk", new
+Item.Properties().food(SOYMILKCHOCOLATE_FOOD));
+    public static final Item SOYMILKCHOCOMINT = register("choco_mint_soy_milk", new
+Item.Properties().food(SOYMILKCHOCOMINT_FOOD));
+    public static final Item SOYMILKCOFFEE = register("coffee_soy_milk", new
+Item.Properties().food(SOYMILKCOFFEE_FOOD));
+    public static final Item SOYMILKMANGO = register("mango_soy_milk", new
+Item.Properties().food(SOYMILKMANGO_FOOD));
+    public static final Item MATCHA = register("matcha", new
+Item.Properties().food(MATCHA_FOOD));
+    public static final Item SOYMILKPEACH = register("peach_soy_milk", new
+Item.Properties().food(SOYMILKPEACH_FOOD));
+    public static final Item SOYMILK = register("soy_milk", new
+Item.Properties().food(SOYMILK_FOOD));
+    public static final Item SOYMILKSTRAWBERRY = register("strawberry_soy_milk", new
+Item.Properties().food(SOYMILKSTRAWBERRY_FOOD));
     public static final Item CHEESE = register("cheese", new
 Item.Properties().food(CHEESE_FOOD));
 
-//Below is the code brain freeze effect for the ice cream btw
     public static final Item ICE_CREAM = register("ice_cream", new
 Item.Properties()
             .food(ICE_CREAM_FOOD, Consumables.defaultFood()
@@ -179,7 +330,6 @@ Item.Properties()
                             new MobEffectInstance(MobEffects.SLOWNESS, 100, 0)))
                     .build()));
     
-    //The code below is the sugar rush speed boost for drinking soda
     public static final Item SODA = register("soda", new Item.Properties()
             .stacksTo(16)
             .food(SODA_FOOD, Consumables.defaultDrink()
@@ -214,6 +364,26 @@ Item.Properties()
             output.accept(PRETZEL);
             output.accept(STRAWBERRY);
             output.accept(BOBA);
+            output.accept(CHEESECAKE);
+            output.accept(CHOCOLATECAKE);
+            output.accept(MATCHACAKE);
+            output.accept(REDVELVETCAKE);
+            output.accept(STRAWBERRYCAKE);
+            output.accept(SOUP);
+            output.accept(BLUEPOPSICLE);
+            output.accept(GREENPOPSICLE);
+            output.accept(PINKPOPSICLE);
+            output.accept(YELLOWPOPSICLE);
+            output.accept(SOYMILKALMOND);
+            output.accept(SOYMILKBANANA);
+            output.accept(SOYMILKCHOCOLATE);
+            output.accept(SOYMILKCHOCOMINT);
+            output.accept(SOYMILKCOFFEE);
+            output.accept(SOYMILKMANGO);
+            output.accept(MATCHA);
+            output.accept(SOYMILKPEACH);
+            output.accept(SOYMILK);
+            output.accept(SOYMILKSTRAWBERRY);
             output.accept(CHEESE);
             output.accept(CUPCAKE);
         });
