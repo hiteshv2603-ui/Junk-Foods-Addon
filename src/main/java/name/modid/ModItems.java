@@ -1,5 +1,9 @@
 package name.modid;
 
+import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.core.Registry;
@@ -344,6 +348,19 @@ Item.Properties()
 
 
     public static void init() {
+                Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+                ResourceKey.create(Registries.CREATIVE_MODE_TAB, JunkFoodsAddon.id("junk_foods")),
+                FabricCreativeModeTab.builder()
+                        .title(Component.literal("Junk Foods"))
+                        .icon(() -> new ItemStack(BURGER))
+                        .displayItems((context, output) -> {
+                            for (Item item : BuiltInRegistries.ITEM) {
+                                if (BuiltInRegistries.ITEM.getKey(item).getNamespace().equals(JunkFoodsAddon.MOD_ID)) {
+                                    output.accept(item);
+                                }
+                            }
+                        })
+                        .build());
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
             output.accept(SODA);
             output.accept(CHIPS);
