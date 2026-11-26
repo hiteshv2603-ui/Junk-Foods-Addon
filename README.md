@@ -46,7 +46,7 @@ A Fabric mod for Minecraft 26.3 that adds 41 snacks, drinks and treats that incl
 - Java 25
 - Fabric Loader and Fabric API
 - Gradle
-- Some of the textures was hand-drawn using Piskelapp but some I downloaded from here https://itch.io/t/4018426/   free-100-piece-16x16-pixel-art-food-icons-pack
+- Some of the textures were hand-drawn using Piskel, and the rest are from the [Free 100-Piece 16x16 Pixel Art Food Icons Pack](https://itch.io/t/4018426/free-100-piece-16x16-pixel-art-food-icons-pack)
 
 ## Credits
 Made by Hitesh Vinothkumar (A 13 year old hack clubber) and this project was made for HackCraft!
